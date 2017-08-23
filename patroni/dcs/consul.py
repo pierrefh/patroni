@@ -79,7 +79,7 @@ class HTTPClient(object):
 class ConsulClient(base.Consul):
 
     @staticmethod
-    def connect(host, port, scheme, verify=True):
+    def connect(host, port, scheme, verify=True, cert=None):
         return HTTPClient(host, port, scheme, verify)
 
 
